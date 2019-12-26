@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    volumes:
+      - ./datas:/srv/data
+    ports:
+      - 25565:25565
+    stdin_open: true
+    tty: true
+
